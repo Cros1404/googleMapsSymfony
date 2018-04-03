@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
-{% block title %}Geocode{% endblock %}
-{% block stylesheets %}
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
-{% endblock %}
+{% block title %}Placed marker{% endblock %}
 {% block javascripts %}
     <script src="{{ asset('js/place_marker.js') }}"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key={{ API_KEY }}&callback=initMap"></script>

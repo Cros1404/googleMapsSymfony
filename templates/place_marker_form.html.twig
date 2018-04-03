@@ -4,7 +4,7 @@
     <script src="{{ asset('js/place_marker_form.js') }}"></script>
 {% endblock %}
 {% block body %}
-    <form method="post">
+    <form method="get">
         <select name="type">
             <option value="address">Address</option>
             <option value="geocode">Latitude and longitude</option>
@@ -15,20 +15,6 @@
             <input type="text" name="address">
         </div>
         <br>
-        Icon:
-        <select name="icon">
-            <option value="">Default</option>
-            <option value="flag-map-marker.png">Flag</option>
-            <option value="map-marker.png">Pin</option>
-        </select>
-        <br><br>
-        Color:
-        <select name="color">
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-        </select>
-        <br><br>
         <input type="submit">
     </form>
 {% endblock %}
